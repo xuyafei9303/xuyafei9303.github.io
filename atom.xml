@@ -4,7 +4,7 @@
   <subtitle><![CDATA[好好学习 天天向上]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-01T02:35:22.000Z</updated>
+  <updated>2017-03-01T08:24:13.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/03/01/hexo%E9%85%8D%E7%BD%AEgithub%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2017/03/01/hexo配置github博客/</id>
+    <published>2017-03-01T07:41:57.000Z</published>
+    <updated>2017-03-01T08:24:13.000Z</updated>
+    <content type="html"><![CDATA[<hr>
+<h1 id="hexo配置github博客"><a href="#hexo配置github博客" class="headerlink" title="hexo配置github博客"></a>hexo配置github博客</h1><p>##date: 2017-03-01 15:41:57</p>
+<h2 id="tags-Github-hexo"><a href="#tags-Github-hexo" class="headerlink" title="###tags:Github hexo"></a>###tags:Github hexo</h2><p>今天看到很多人完成了建立博客网站，所以按照hexo的方法建立了这个博客，具体地址是：<br> <a href="http://xuyafei9303.github.io/" target="_blank" rel="external">http://xuyafei9303.github.io/</a>  </p>
+<p>我使用的是MacBook Pro，所以需要用到的是node.js和hexo。<br>node.js点这里<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a><br>下载对应的mac版本，会有一个pkg的安装器，点继续安装完成即可。</p>
+<p>安装hexo。</p>
+<blockquote>
+<p>sudo npm install -g hexo</p>
+</blockquote>
+<p>期间需要输入电脑密码。<br>接着终端输入</p>
+<blockquote>
+<p>hexo init</p>
+</blockquote>
+<p>本地查看有没有成功：</p>
+<blockquote>
+<p>hexo s</p>
+</blockquote>
+<p>出现http：//localhost:4000/.Press Ctrl + C to Stop说明成功了。</p>
+<p>github点进去注册：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></p>
+<p>账号注册完毕</p>
+<p>github中需要配置ssh的key将本地和github建立一个远程连接，命令如下：</p>
+<blockquote>
+<p>ssh-keygen</p>
+<p>vim ~/.ssh/id_rsa.pub</p>
+</blockquote>
+<p>将打开的口令复制下来《一大串的字符串》<br>：wq退出窗口。</p>
+<p>来到github–&gt;settings–&gt;SSH and GPG keys–&gt;添加key–&gt;add</p>
+<p>在首页点击加号选择第一个选项：<br><img src="/Users/XYF/Desktop/屏幕快照 2017-03-01 下午3.54.16.png" alt="Alt text"></p>
+<p>进来信息页，我们希望你的填写按照如下格式：<br><img src="/Users/XYF/Desktop/屏幕快照 2017-03-01 下午3.59.16.png" alt="Alt text"></p>
+<p>以上准备完毕，我们打开hexo里面创建的一个叫 _config.yml 的文件，修改一下内部的配置。<br>上面的<br><img src="/Users/XYF/Desktop/屏幕快照 2017-03-01 下午4.15.41.png" alt="Alt text"><br>下面的<br><img src="/Users/XYF/Desktop/屏幕快照 2017-03-01 下午4.15.50.png" alt="Alt text"><br>github地址请修改成自己的账号，上面的个人信息也请按照个人要求添加。</p>
+<p>##开始上传博客<br>命令行依次执行：</p>
+<blockquote>
+<p>npm install hexo-deployer-git –save</p>
+<p>hexo g</p>
+<p>hexo d</p>
+</blockquote>
+<p>此时打开github会看到刚刚新建的仓库内有了内容，但是我们依然还没有开始写博客，接着：</p>
+<blockquote>
+<p>hexo new “blogName”</p>
+</blockquote>
+<p>打开hexo路径来到里面的source/_posts会看到你创建的blog，后缀是md的文件，用macdown等编辑器打开就可以按照macdown语法编写博客。</p>
+<p>完成编辑以后，更新博客，此时编辑器必须是关闭的。</p>
+<blockquote>
+<p>hexo g<br>hexo d</p>
+</blockquote>
+<p>执行完刷新网页就能看到更新的内容了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<h1 id="hexo配置github博客"><a href="#hexo配置github博客" class="headerlink" title="hexo配置github博客"></a>hexo配置github博客</h1><p>##date: 2017-03-0]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
